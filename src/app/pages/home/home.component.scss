@@ -1,0 +1,45 @@
+.address-box {
+    display: flex;
+    align-items: center;
+    background-color: #221F1E;
+    color: white;
+    border-radius: 0px;
+    padding-left: 10%;
+}
+
+.line {
+    width: 1px;
+    height: 32px;
+    background: white;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.fa-facebook-f {
+    margin-left: 20%;
+}
+
+.fab {
+    padding-left: 1.5%;
+    font-size: 18px;
+}
+
+.another-phone {
+    padding-left: 1%;
+}
+
+.fas {
+    color: #DB4E48;
+    font-size: 20px;
+    padding-right: 1%;
+}
+
+.after-hover:hover{
+    color: #DB4E48;
+    cursor: pointer;
+}
+
+.fab:hover {
+    color: #DB4E48;
+    cursor: pointer;
+}

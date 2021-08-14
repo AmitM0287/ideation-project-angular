@@ -1,9 +1,9 @@
 <mat-card class="address-box">
     <i class="fas fa-map-marker-alt"></i>
-    <span class="after-hover">Address: 4578 Marmora Road, Glasgow, D04 89GR</span>
-    <span class="line"></span>
+    <span class="after-hover address">Address: 4578 Marmora Road, Glasgow, D04 89GR</span>
+    <span class="address-box-line"></span>
     <i class="fas fa-phone-alt"></i>
-    <span class="after-hover">(800) 123-0045</span>
+    <span class="after-hover phone">(800) 123-0045</span>
     <span class="after-hover another-phone">(800) 123-1245</span>
     <i class="fab fa-facebook-f"></i>
     <i class="fab fa-twitter"></i>
@@ -12,3 +12,100 @@
     <i class="fab fa-youtube"></i>
     <i class="fab fa-pinterest-p"></i>
 </mat-card>
+
+<nav class="navbar">
+    <img src="../../../assets/interiart-logo.png" alt="interiart logo">
+    <ul>
+        <li>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">SERVICES</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">TESTIMONIALS</a>
+            <a href="#">TEAM</a>
+            <a href="#">NEWS</a>
+            <a href="#">CONTACT US</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="mid-section">
+    <div class="mid-section-heading">
+        WE CREATE COZINESS FOR <br><br><br>
+        YOUR APPARTMENT
+    </div>
+    <mat-card class="get-quote-form">
+        <h2>GET A QUOTE</h2>
+        <div class="line"></div>
+        <form class="get-quote-form">
+            <div class="input-container">
+                <span class="material-icons-outlined">person_outline</span>
+                <input placeholder="Your name" type="text" required>
+            </div>
+            <div class="input-container">
+                <span class="material-icons-outlined">phone</span>
+                <input placeholder="Your phone" type="text" required>
+            </div>
+            <div class="input-container">
+                <span class="material-icons-outlined">mail_outline</span>
+                <input class="email" placeholder="Your email" type="email" required>
+            </div>
+            <div class="input-container">
+                <span class="material-icons-outlined">home</span>
+                <select required>
+                    <option value="" disabled selected>Type of property</option>
+                    <option value="property type 1">Property type 1</option>
+                    <option value="property type 2">Property type 2</option>
+                    <option value="property type 3">Property type 3</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <span class="material-icons-outlined">settings</span>
+                <select required>
+                    <option value="" disabled selected>Type of service</option>
+                    <option value="service type 1">Service type 1</option>
+                    <option value="service type 2">Service type 2</option>
+                    <option value="service type 3">Service type 3</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <span class="material-icons-outlined">mode_comment</span>
+                <textarea placeholder="Your message" cols="29" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </mat-card>
+</div>
+
+<div class="about-us-section">
+    <div class="about-us">
+        <h2>ABOUT US</h2>
+        <div class="about-us-line"></div>
+        <p>
+            Interiart is an award-winning architecture and interior design practice based in NYC. We work internationally on projects of residential & commercial interior design that require a creative approach. Our talented and experienced designers leverage their knowledge and expertise to create unique and comfortable interiors for you.<br>
+            We take a dedicated approach to help our commercial clients create the interior for their company office and other spaces.Our residential interior design services are perfect for creating cozy atmosphere in your house regardless of its size.
+            Our team know that interior design can be stressful for the client and we do our best to make it as easy as possible. We listen to your needs, ideas, and inputs. And most importantly, we make it exciting, enjoyable for our clients.
+        </p>
+        <button type="submit" class="read-more-btn">READ MORE</button>
+    </div>
+    <mat-card class="commercial-design">
+        <img src="../../../assets/commercial-design-background.jpg" alt="commercial design">
+        <h4>COMMERCIAL DESIGN</h4>
+        <p>
+            We take a dedicated approach to help our commercial clients create the interior for their company offices and other spaces.
+        </p>
+        <button type="submit" class="read-more-btn">READ MORE</button>
+    </mat-card>
+    <mat-card class="residental-design">
+        <img src="../../../assets/residental-design-background.jpg" alt="residental design">
+        <h4>RESIDENTIAL DESIGN</h4>
+        <p>
+            We take a dedicated approach to help ours residential clients create the interior for their company offices and other spaces.
+        </p>
+        <button type="submit" class="read-more-btn">READ MORE</button>
+    </mat-card>
+</div>
+
+<div class="our-services-section">
+    
+</div>

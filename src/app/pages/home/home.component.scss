@@ -4,10 +4,11 @@
     background-color: #221F1E;
     color: white;
     border-radius: 0px;
-    padding-left: 10%;
+    padding-left: 8%;
+    height: 18px;
 }
 
-.line {
+.address-box-line {
     width: 1px;
     height: 32px;
     background: white;
@@ -16,7 +17,7 @@
 }
 
 .fa-facebook-f {
-    margin-left: 20%;
+    margin-left: 29%;
 }
 
 .fab {
@@ -26,6 +27,11 @@
 
 .another-phone {
     padding-left: 1%;
+    font-size: 13px;
+}
+
+.phone, .address {
+    font-size: 13px;
 }
 
 .fas {
@@ -42,4 +48,245 @@
 .fab:hover {
     color: #DB4E48;
     cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.navbar a:hover {
+    color: #DB4E48;
+}
+
+.navbar img {
+    padding-right: 23%;
+}
+
+.mid-section {
+    background-image: url('../../../assets/header-background.jpg');
+    background-size: cover;
+    height: 740px;
+    display: flex;
+    align-items: center;
+}
+
+.mid-section-heading {
+    color: white;
+    font-size: 52px;
+    font-weight: bold;
+    padding-left: 8%;
+    padding-right: 10%;
+}
+
+.get-quote-form {
+    width: 320px;
+    height: 530px;
+    border-radius: 0px;
+    margin-right: 7%;
+}
+
+.get-quote-form h2 {
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+.line {
+    width: 60px;
+    height: 1px;
+    background: #DB4E48;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.input-container {
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 2%;
+}
+
+.get-quote-form input {
+    width: 250px;
+    height: 40px;
+    padding-left: 12px;
+    outline: none;
+    border: #F8F8F8;
+    background-color: #F8F8F8;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.input-container span {
+    color: #E0E0E0;
+    background-color: #F8F8F8;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 26px;
+    padding-left: 16px;
+    padding-top: 8px;
+}
+
+.get-quote-form select {
+    width: 263px;
+    height: 40px;
+    margin-top: 15px;
+    padding-left: 10px;
+    outline: none;
+    border: #F8F8F8;
+    background-color: #F8F8F8;
+    font-size: 14px;
+}
+
+.get-quote-form textarea {
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-top: 7px;
+    outline: none;
+    border: 2px solid #F8F8F8;
+    background-color: #F8F8F8;
+    font-size: 14px;
+}
+
+::placeholder {
+    color: black;
+}
+
+#person-icon {
+    margin-top: 20px;
+}
+
+.get-quote-form button {
+    background-color: #DB4E48;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    height: 30px;
+    width: 80px;
+    cursor: pointer;
+    margin-left: 7px;
+}
+
+.get-quote-form button:hover {
+    background-color: #151515;
+}
+
+.about-us-section {
+    display: flex;
+    background-color: #F8F8F8;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.about-us-section p {
+    font-size: 14px;
+}
+
+.read-more-btn {
+    background-color: #DB4E48;
+    color: white;
+    border: none;
+    margin-top: 14px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    background-color: #151515;
+}
+
+.about-us-section h4,h2 {
+    font-weight: bold;
+}
+
+.about-us {
+    padding-left: 8%;
+    width: 400px;
+    padding-right: 3%;
+}
+
+.about-us h2 {
+    font-size: 22px;
+}
+
+.about-us-line {
+    width: 60px;
+    height: 1px;
+    background: #DB4E48;
+    margin-bottom: 4%;
+}
+
+.commercial-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    padding: 0px;
+    height: 420px;
+    margin-right: 2%;
+}
+
+.commercial-design p {
+    text-align: center;
+}
+
+.commercial-design h4 {
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.commercial-design h4:hover{
+    color: #DB4E48;
+}
+
+.commercial-design img {
+    width: 330px;
+}
+
+.residental-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    padding: 0px;
+    height: 420px;
+    margin-right: 8%;
+}
+
+.residental-design p {
+    text-align: center;
+}
+
+.residental-design h4 {
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.residental-design h4:hover{
+    color: #DB4E48;
+}
+
+.residental-design img {
+    width: 330px;
+}
+
+.our-services-section {
+    background-image: url('../../../assets/footer-background.jpg');
+    background-size: cover;
+    height: 600px;
 }

@@ -289,4 +289,80 @@
     background-image: url('../../../assets/footer-background.jpg');
     background-size: cover;
     height: 600px;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.our-services-section h4, h2 {
+    font-weight: bold;
+}
+
+.our-services {
+    width: 450px;
+    padding-left: 8%;
+    padding-right: 2%;
+    color: white;
+}
+
+.our-services h2 {
+    font-size: 22px;
+}
+
+.our-services p {
+    font-size: 14px;
+}
+
+.our-services-line {
+    width: 60px;
+    height: 1px;
+    background: #DB4E48;
+    margin-bottom: 4%;
+}
+
+.design-planning {
+    width: 320px;
+    margin-right: 0.5%;
+    text-align: center;
+}
+
+.design-planning p {
+    font-size: 14px;
+    color: white;
+}
+
+.design-planning h4 {
+    color: white;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.design-planning img {
+    width: 75px;
+    cursor: pointer;
+}
+
+.services-management {
+    width: 320px;
+    text-align: center;
+}
+
+.services-management p {
+    font-size: 14px;
+    color: white;
+}
+
+.services-management h4 {
+    color: white;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.services-management img {
+    width: 75px;
+    cursor: pointer;
+}
+
+.space-planning, .project-management {
+    padding-top: 20px;
 }

@@ -37,42 +37,90 @@
     <mat-card class="get-quote-form">
         <h2>GET A QUOTE</h2>
         <div class="line"></div>
-        <form class="get-quote-form">
+        <form>
             <div class="input-container">
                 <span class="material-icons-outlined">person_outline</span>
-                <input placeholder="Your name" type="text" required>
+                <input [formControl]="name" placeholder="Your name" type="text">
             </div>
+            <mat-error *ngIf="name.invalid && (name.dirty || name.touched)">
+                <div class="error" *ngIf="name.errors?.required">
+                    Name is required.
+                </div>
+                <div class="error" *ngIf="name.errors?.pattern">
+                    Name must be at least 4 characters long.
+                </div>
+            </mat-error >
+
             <div class="input-container">
                 <span class="material-icons-outlined">phone</span>
-                <input placeholder="Your phone" type="text" required>
+                <input [formControl]="phone" placeholder="Your phone" type="text">
             </div>
+            <mat-error *ngIf="phone.invalid && (name.dirty || name.touched)">
+                <div class="error" *ngIf="phone.errors?.required">
+                    Phone is required.
+                </div>
+                <div class="error" *ngIf="phone.errors?.pattern">
+                    Phone must be 10 digit long.
+                </div>
+            </mat-error>
+
             <div class="input-container">
                 <span class="material-icons-outlined">mail_outline</span>
-                <input class="email" placeholder="Your email" type="email" required>
+                <input [formControl]="email" class="email" placeholder="Your email" type="email">
             </div>
+            <mat-error *ngIf="email.invalid && (name.dirty || name.touched)">
+                <div class="error" *ngIf="email.errors?.required">
+                    Email is required.
+                </div>
+                <div class="error" *ngIf="email.errors?.email">
+                    Invalid email.
+                </div>
+            </mat-error>
+
             <div class="input-container">
                 <span class="material-icons-outlined">home</span>
-                <select required>
+                <select [formControl]="propertyType">
                     <option value="" disabled selected>Type of property</option>
                     <option value="property type 1">Property type 1</option>
                     <option value="property type 2">Property type 2</option>
                     <option value="property type 3">Property type 3</option>
                 </select>
             </div>
+            <mat-error *ngIf="propertyType.invalid && (name.dirty || name.touched)">
+                <div class="error" *ngIf="propertyType.errors?.required">
+                    Property type is required.
+                </div>
+            </mat-error>
+
             <div class="input-container">
                 <span class="material-icons-outlined">settings</span>
-                <select required>
+                <select [formControl]="serviceType">
                     <option value="" disabled selected>Type of service</option>
                     <option value="service type 1">Service type 1</option>
                     <option value="service type 2">Service type 2</option>
                     <option value="service type 3">Service type 3</option>
                 </select>
             </div>
+            <mat-error *ngIf="serviceType.invalid && (name.dirty || name.touched)">
+                <div class="error" *ngIf="serviceType.errors?.required">
+                    Service type is required.
+                </div>
+            </mat-error>
+
             <div class="input-container">
                 <span class="material-icons-outlined">mode_comment</span>
-                <textarea placeholder="Your message" cols="29" rows="6" required></textarea>
+                <textarea [formControl]="message" placeholder="Your message" cols="29" rows="4"></textarea>
             </div>
-            <button type="submit" class="submit-btn">SUBMIT</button>
+            <mat-error *ngIf="message.invalid && (name.dirty || name.touched)">
+                <div class="error" *ngIf="message.errors?.required">
+                    Message is required.
+                </div>
+                <div class="error" *ngIf="message.errors?.pattern">
+                    Message must be at least 4 characters long.
+                </div>
+            </mat-error>
+
+            <button (click)="submit()" type="submit" class="submit-btn">SUBMIT</button>
         </form>
     </mat-card>
 </div>

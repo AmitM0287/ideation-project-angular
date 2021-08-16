@@ -9,6 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+import { UserService } from './services/user.service';
+import { HttpClientModule } from '@angular/common/http';
 import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
@@ -23,9 +26,13 @@ import { MatInputModule } from '@angular/material/input';
     MatCardModule,
     MatIconModule,
     MatFormFieldModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     MatInputModule,
   ],
-  providers: [],
+  providers: [
+    UserService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
